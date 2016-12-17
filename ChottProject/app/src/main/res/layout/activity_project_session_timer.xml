@@ -1,0 +1,116 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="io.github.jisyed.chott.activities.ProjectSessionTimerActivity"
+                android:background="@color/colorChottBackground">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:id="@+id/ivTimerCategoryIcon"
+                android:src="@drawable/icon_digital_writing"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="10dp"
+                android:padding="6dp"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Category"
+                    android:id="@+id/tvTimerCategoryName"
+                    android:layout_marginTop="16dp"
+                    android:textColor="@color/sysWhite"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Project"
+                    android:id="@+id/tvTimerProjectName"
+                    android:textColor="@color/sysWhite"
+                    android:layout_marginTop="4dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="256dp"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:id="@+id/timerRing"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="0:00:00"
+                android:id="@+id/tvTimerCurrentTime"
+                android:layout_gravity="center"
+                android:textColor="@color/sysWhite"
+                android:textSize="48dp"/>
+        </FrameLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Finish Timing"
+            android:id="@+id/btTimerFinish"
+            android:layout_marginLeft="48dp"
+            android:layout_marginRight="48dp"
+            android:background="@color/colorChottBackgroundLite"
+            android:layout_marginBottom="4dp"
+            android:textColor="@color/sysWhite"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Restart"
+                android:id="@+id/btTimerRestart"
+                android:layout_weight="1"
+                android:layout_marginRight="2dp"
+                android:background="@color/colorChottBackgroundLite"
+                android:layout_marginLeft="48dp"
+                android:textColor="@color/sysWhite"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Cancel"
+                android:id="@+id/btTimerCancel"
+                android:layout_weight="1"
+                android:layout_marginLeft="2dp"
+                android:background="@color/colorChottBackgroundLite"
+                android:layout_marginRight="48dp"
+                android:textColor="@color/sysWhite"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,109 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="io.github.jisyed.chott.activities.AddProjectActivity"
+                android:background="@color/colorChottBackground">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:background="@color/colorChottCodeRegular"
+            android:id="@+id/llAdderTopHeader"
+            android:layout_weight="0">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/ivAdderCategoryIcon"
+                android:src="@drawable/icon_code"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Code"
+                android:id="@+id/tvAdderCategoryName"
+                android:textColor="@color/sysWhite"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="16dp"/>
+
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/etAdderProjectName"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_weight="1"
+            android:textColor="@color/sysWhite"
+            android:backgroundTint="@color/sysWhite"
+            android:inputType="textFilter|textCapWords"
+            android:gravity="bottom"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Project Name"
+            android:id="@+id/tvAdderProjectNameLabelNotMutable"
+            android:layout_weight="0"
+            android:layout_marginLeft="36dp"
+            android:textColor="@color/sysLtGray"
+            android:textSize="18dp"
+            android:layout_marginBottom="64dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add &amp; Start Tracking"
+            android:id="@+id/btAdderAddAndTrack"
+            android:layout_marginLeft="48dp"
+            android:layout_marginRight="48dp"
+            android:background="@color/colorChottBackgroundLite"
+            android:layout_marginBottom="4dp"
+            android:textColor="@color/sysWhite"
+            android:layout_weight="0"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:layout_marginBottom="32dp">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Add"
+                android:id="@+id/btAdderAdd"
+                android:layout_weight="1"
+                android:layout_marginRight="2dp"
+                android:background="@color/colorChottBackgroundLite"
+                android:layout_marginLeft="48dp"
+                android:textColor="@color/sysWhite"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Cancel"
+                android:id="@+id/btAdderCancel"
+                android:layout_weight="1"
+                android:layout_marginLeft="2dp"
+                android:background="@color/colorChottBackgroundLite"
+                android:layout_marginRight="48dp"
+                android:textColor="@color/sysWhite"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,181 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                tools:context=".CategorySelectionActivity"
+                android:background="@color/colorChottBackground">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/csTopLeftFrame"
+                android:layout_marginRight="@dimen/category_selection_margin"
+                android:layout_marginBottom="@dimen/category_selection_margin"
+                android:background="@color/colorChottCodeRegular">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageViewCategoryCode"
+                    android:src="@drawable/icon_code"
+                    android:padding="@dimen/category_image_padding"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/str_category_code"
+                    android:id="@+id/textViewCategoryCode"
+                    android:textColor="@color/sysWhite"
+                    android:gravity="bottom|center_horizontal"
+                    android:paddingBottom="@dimen/category_label_bottom_offset"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/buttonCategoryCode"
+                    android:scaleType="fitStart"
+                    android:layout_gravity="center"
+                    android:gravity="bottom|center_horizontal"
+                    android:background="@color/sysTransparent"
+                    android:textColor="@color/sysWhite"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorChottArtRegular"
+                android:id="@+id/csTopRightFrame"
+                android:layout_marginBottom="@dimen/category_selection_margin"
+                android:layout_marginLeft="@dimen/category_selection_margin">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageViewCategoryArt"
+                    android:src="@drawable/icon_art"
+                    android:padding="@dimen/category_image_padding"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/str_category_art"
+                    android:id="@+id/textViewCategoryArt"
+                    android:textColor="@color/sysWhite"
+                    android:gravity="bottom|center_horizontal"
+                    android:paddingBottom="@dimen/category_label_bottom_offset"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/buttonCategoryArt"
+                    android:scaleType="fitStart"
+                    android:layout_gravity="center"
+                    android:gravity="bottom|center_horizontal"
+                    android:background="@color/sysTransparent"
+                    android:textColor="@color/sysWhite"/>
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorChottMusicRegular"
+                android:id="@+id/csBottomLeftFrame"
+                android:layout_marginRight="@dimen/category_selection_margin"
+                android:layout_marginTop="@dimen/category_selection_margin">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageViewCategoryMusic"
+                    android:src="@drawable/icon_music"
+                    android:padding="@dimen/category_image_padding"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/str_category_music"
+                    android:id="@+id/textViewCategoryMusic"
+                    android:textColor="@color/sysWhite"
+                    android:gravity="bottom|center_horizontal"
+                    android:paddingBottom="@dimen/category_label_bottom_offset"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/buttonCategoryMusic"
+                    android:scaleType="fitStart"
+                    android:layout_gravity="center"
+                    android:gravity="bottom|center_horizontal"
+                    android:background="@color/sysTransparent"
+                    android:textColor="@color/sysWhite"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorChottWritingRegular"
+                android:id="@+id/csBottomRightFrame"
+                android:layout_marginTop="@dimen/category_selection_margin"
+                android:layout_marginLeft="@dimen/category_selection_margin">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageViewCategoryWriting"
+                    android:src="@drawable/icon_digital_writing"
+                    android:padding="@dimen/category_image_padding"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/str_category_writing"
+                    android:id="@+id/textViewCategoryWriting"
+                    android:textColor="@color/sysWhite"
+                    android:gravity="bottom|center_horizontal"
+                    android:paddingBottom="@dimen/category_label_bottom_offset"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/buttonCategoryWriting"
+                    android:scaleType="fitStart"
+                    android:layout_gravity="center"
+                    android:gravity="bottom|center_horizontal"
+                    android:background="@color/sysTransparent"
+                    android:textColor="@color/sysWhite"/>
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="category_selection_margin">6dp</dimen>
+    <dimen name="category_image_padding">32dp</dimen>
+    <dimen name="category_label_bottom_offset">24dp</dimen>
+</resources>
