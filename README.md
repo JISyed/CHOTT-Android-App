@@ -1,7 +1,7 @@
 # CHOTT-Android-App
 Creative Hobby Occurrence Time Tracker
 
-Time tracking app made as a final project for DePaul University's Android evelopment course. Built with Android Studios 1.3.2 and targeted for at least Android 4.2 Jelly Bean or higher (API Level 17). Intentionally designed for Android 6.0 Marshmellow (API Level 23).
+Time tracking app made as a final project for DePaul University's Android development course. Built with Android Studios 1.3.2 and targeted for at least Android 4.2 Jelly Bean or higher (API Level 17). Intentionally designed for Android 6.0 Marshmellow (API Level 23).
 
 Original design plan can be read in `DesignPlan/` folder. Instructions on usng the app can be found in `ChottDocumentaion.pdf`. My experience developing the app can be read in `DevelopmentInsights.pdf`.
 
